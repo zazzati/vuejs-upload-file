@@ -6,9 +6,7 @@
    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
   </head>
   <body>
-    <div id="app">         
-     <p> Le poche gioie ed i molti dolori degli upload in javascript...</p>
-     
+    <div id="app">
     <form id="uploadForm" role="form" enctype="multipart/form-data" >
       <input type="file" id="miofile" name="miofile">
       <input type="button" value="Upload" v-on:click="submitFile">
@@ -20,8 +18,7 @@
   el: '#app',
   data: {
   },  
-  methods: {
-   
+  methods: {      
     submitFile() {
       let formData = new FormData(); 
       console.log(miofile.files[0]);     
@@ -39,8 +36,6 @@
   }
 
 })
-    </script>
-
-    
+    </script>      
   </body>
 </html>
